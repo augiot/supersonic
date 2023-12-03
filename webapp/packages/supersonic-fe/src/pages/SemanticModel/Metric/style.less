@@ -1,0 +1,195 @@
+.metricFilterWrapper {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.metricTable {
+    margin: 20px;
+}
+
+
+
+.searchBox {
+    // margin-bottom: 12px;
+    background: #fff;
+    border-radius: 10px;
+    width: 540px;
+    margin: 0 auto;
+    .searchInput {
+        width: 100%;
+        border: 1px solid rgba(35, 104, 184, 0.6);
+        border-radius: 10px;
+    }
+    :global {
+
+        .ant-select-auto-complete {
+            width: 100%;
+        }
+        .ant-input {
+            height: 50px;
+            padding: 0 15px;
+            color: #515a6e;
+            font-size: 14px;
+            line-height: 50px;
+            background: hsla(0, 0%, 100%, 0.2);
+            border: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            caret-color: #296df3;
+  
+            &:focus {
+                border-right-width: 0 !important;
+                box-shadow: none;
+            }
+        }
+  
+        .ant-input-group-addon {
+            left: 0 !important;
+            padding: 0;
+            background: hsla(0, 0%, 100%, 0.2);
+            border: none;
+            border-top-left-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 0;
+  
+            .ant-btn {
+                width: 72px;
+                height: 50px;
+                margin: 0;
+                color: rgba(35, 104, 184, 0.6);
+                font-size: 16px;
+                background-color: transparent;
+                background-color: transparent;
+                border: none;
+                box-shadow: none !important;
+  
+                &::after {
+                    box-shadow: none !important;
+                }
+  
+                .anticon {
+                    font-size: 28px;
+  
+                    &:hover {
+                        color: @primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.overviewExtraContainer {
+    display: flex;
+    font-size: 14px;
+    .extraWrapper {
+        display: flex;
+        width: 100%;
+        .extraStatistic {
+            display: inline-flex;
+            color: rgba(42, 46, 54, 0.65);
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.5714285714285714;
+            list-style: none;
+            .extraTitle {
+                font-size: 12px;
+                min-width: 50px;
+                margin-inline-end: 6px;
+                margin-block-end: 0;
+                margin-bottom: 4px;
+                color: rgba(42, 46, 54, 0.45);
+            }
+            .extraValue {
+                font-size: 12px;
+                color: rgba(42, 46, 54, 0.65);
+                display: inline-block;
+                direction: ltr;
+            }
+        }
+    }
+}
+
+.metricDetail {
+    height: calc(100vh - 50px);
+    .title {
+        margin-bottom: 0;
+        margin-top:0;
+        background-color: #fff;
+        font-size: 20px;
+        line-height: 34px;
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+        .titleLeft {
+            display: flex;
+            flex: 1 1 auto;
+            .navContainer {
+                // display: flex;
+                padding: 20px;
+                padding-left: 30px;
+                .description {
+                    font-size: 12px;
+                    line-height: 12px;
+                    padding-top: 12px;
+                    color: #546174
+                }
+            }
+            .backBtn {
+                background-color: #f8f8f8;
+                padding: 5px;
+                color: #b0b4bc;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                &:hover {
+                    background-color: #7599e5;
+                    color: #fff;
+                }
+            }
+        }
+        .titleRight {
+            display: flex;
+            flex: 0 1 200px;
+            .info {
+                margin: 15px;
+            }
+        }
+    }
+
+    .tabContainer {
+        background-color: #fff;
+        padding: 0px 40px;
+    }
+    .metricInfoContent {
+        padding:25px;
+        .title {
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #0e73ff;
+            font-weight: bold;
+            position: relative;
+            &::before {
+                display: block;
+                position: absolute;
+                content: "";
+                left: -10px;
+                top: 10px;
+                height: 14px;
+                width: 3px;
+                font-size: 0;
+                background: #0e73ff;
+                border-radius: 2px;
+                border: 1px solid #0e73ff;
+            }
+        }
+    }
+}
+

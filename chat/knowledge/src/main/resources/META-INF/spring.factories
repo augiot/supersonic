@@ -1,0 +1,2 @@
+com.tencent.supersonic.knowledge.dictionary.FileHandler=\
+    com.tencent.supersonic.knowledge.dictionary.LocalFileHandler
